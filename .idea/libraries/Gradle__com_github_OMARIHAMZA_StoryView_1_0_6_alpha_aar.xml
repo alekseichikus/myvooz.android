@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.OMARIHAMZA:StoryView:1.0.6-alpha@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/88ce5c26446dffc11e1ed4b2fa321b55/jetified-StoryView-1.0.6-alpha/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/88ce5c26446dffc11e1ed4b2fa321b55/jetified-StoryView-1.0.6-alpha/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/88ce5c26446dffc11e1ed4b2fa321b55/jetified-StoryView-1.0.6-alpha/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.OMARIHAMZA/StoryView/1.0.6-alpha/19fe8391c61e97f325a7412e67b209806cf96068/StoryView-1.0.6-alpha-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

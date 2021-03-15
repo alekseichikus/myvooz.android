@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">МОЙ ВУЗ</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="settings">Settings</string>
+    <integer name="com_vk_sdk_AppId">7261626</integer>
+    <string-array name="months_array"></string-array>
+    <string name="title_activity_search">SearchActivity</string>
+
+    <string-array name="Months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="title_activity_splash">SplashActivity</string>
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ng.com.obkm.myvooz">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="ng.com.obkm.myvooz.profile.Auth.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <receiver android:name="ng.com.obkm.myvooz.utils.Notification.MyReceiver"/>
+
+        <activity android:name="ng.com.obkm.myvooz.PreLoad.SplashActivity"
+            android:theme="@style/splashStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vk.sdk.VKServiceActivity"
+            android:label="ServiceActivity"
+            android:theme="@style/VK.Transparent" />
+        <activity
+            android:name="ng.com.obkm.myvooz.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.profile.SettingsNotification.SettingActivity"
+            android:label="SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.profile.EditAccount.EditAccountActivity"
+            android:label="EditAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.profile.EditGroup.EditGroupActivity"
+            android:label="EditGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.profile.CreateGroup.CreateGroupActivity"
+            android:label="CreateGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.profile.JoinGroup.JoinGroupActivity"
+            android:label="JoinGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.note.UserCheckList.view.UsersCheckListActivity"
+            android:label="UsersCheckListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.SelectParamActivity"
+            android:label="SelectParamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.profile.UserRequestConfirm.UsersRequestConfirmListActivity"
+            android:label="UsersRequestConfirmListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.UsersListActivity"
+            android:label="UsersListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.note.ChangeNote.view.ChangeNoteActivity"
+            android:label="ChangeNoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.note.AddNote.view.AddNoteActivity"
+            android:label="AddNoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.profile.AddNotification.CameraImage.CameraImageActivity"
+            android:label="CameraImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.home.notification.view.UserNotificationActivity"
+            android:label="UserNotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.Load.LoadActivity"
+            android:label="LoadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.profile.AddNotification.view.AddNotificationActivity"
+            android:label="AddNotificationActivity "
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="ng.com.obkm.myvooz.profile.AddNotification.Camera.CameraActivity"
+            android:label="CameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.search.WeekSchedule.WeekScheduleActivity"
+            android:label="search.WeekScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.profile.AddNotification.Camera.ImageDialogActivity"
+            android:label="ImageDialogActivity" />
+        <activity
+            android:name="ng.com.obkm.myvooz.profile.AboutInfo.AboutInfoActivity"
+            android:label="AboutInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.SearchEmptyClassroomActivity"
+            android:label="SearchEmptyClassroomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.MainActivity"
+            android:label="MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ng.com.obkm.myvooz.search.WeekSchedule.WeekSchedulePartFragment"
+            android:label="DemoObjectFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ng.com.obkm.myvooz.CheckForFullnessActivity"
+            android:label="GroupSelectActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="ng.com.obkm.myvooz.utils.MyMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

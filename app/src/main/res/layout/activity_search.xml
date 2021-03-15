@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="#fff"
+tools:context="ng.com.obkm.myvooz.SearchActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginRight="16dp"
+    android:id="@+id/search_block"
+    android:layout_marginLeft="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_button"
+        android:background="?android:selectableItemBackground"
+        android:foreground="?android:selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="30dp"
+        android:layout_centerVertical="true"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@android:color/transparent">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:tint="#a1a4a5"
+            android:src="@drawable/ic_arrow_left_r"/>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/back_button"
+        android:id="@+id/ic_search"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_search"
+        android:tint="#b1b4c0"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:id="@+id/search_item"
+        android:layout_toRightOf="@+id/ic_search"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme.PopupOverlay2"
+        android:backgroundTint="#e1e4e5"
+        android:hint="Поиск"
+        android:fontFamily="@font/roboto_regular"/>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/remove_button"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_close"
+        android:tint="#b1b4c0"/>
+</RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_block"
+        android:id="@+id/swipe_container">
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/search_block"
+            android:layout_height="wrap_content"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/empty_edittext_view"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_info"
+            android:fontFamily='@font/roboto_regular'
+            android:textColor="@color/colorUnSelected"
+            android:textSize="17sp"
+            android:gravity="center_horizontal"
+            android:text="Введите ФИО преподавателя, группу, или аудиторию"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/empty_listview"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:fontFamily='@font/roboto_regular'
+            android:textColor="@color/colorUnSelected"
+            android:textSize="17sp"
+            android:gravity="center_horizontal"
+            android:text="Ничего не найдено"/>
+    </LinearLayout>
+
+</RelativeLayout>

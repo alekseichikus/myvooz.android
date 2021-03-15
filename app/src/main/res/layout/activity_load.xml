@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#fff">
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:id="@+id/image_load"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_big" />
+        <ImageView
+            android:layout_width="16dp"
+            android:id="@+id/rotate_image"
+            android:layout_height="16dp"
+            android:layout_gravity="center_horizontal"
+            android:tint="#cbccd5"
+            android:src="@drawable/ic_circle_notch" />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_schedule"
+            android:visibility="visible"
+            android:lines="3"
+            android:textColor="#616465"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text=""/>
+    </LinearLayout>
+</RelativeLayout>

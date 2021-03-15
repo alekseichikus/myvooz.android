@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: me.bendik.simplerangeview:simplerangeview:0.2.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/df280e4230a9035cf2acd8085702d850/jetified-simplerangeview-0.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/df280e4230a9035cf2acd8085702d850/jetified-simplerangeview-0.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/df280e4230a9035cf2acd8085702d850/jetified-simplerangeview-0.2.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.bendik.simplerangeview/simplerangeview/0.2.0/55cf29f3a0486b2069cd25fd705fdda9b658de7b/simplerangeview-0.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.bendik.simplerangeview/simplerangeview/0.2.0/ba7685005d136a0166510fc88a9bcc002c8c2a69/simplerangeview-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

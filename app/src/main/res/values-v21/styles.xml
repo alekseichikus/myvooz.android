@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SearchStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="editTextColor">#FFFFFF</item>
+        <item name="android:searchIcon">@drawable/ic_search</item>
+        <item name="android:closeIcon">@drawable/ic_close</item>
+        // add desired drawble, set null for no background
+    </style>
+
+
+</resources>

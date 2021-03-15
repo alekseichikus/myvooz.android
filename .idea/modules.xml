@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="usatu 4.0/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usatu_4.0.iml" filepath="$PROJECT_DIR$/.idea/modules/usatu_4.0.iml" group="usatu_4.0" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="4dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:background="#fff"
+        android:stateListAnimator="@null"
+        android:text="Выйти из аккаунта"
+        android:foreground="?android:selectableItemBackground"
+        android:id="@+id/logout_button"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="17sp"
+        android:textColor="#eb4242"/>
+</androidx.cardview.widget.CardView>

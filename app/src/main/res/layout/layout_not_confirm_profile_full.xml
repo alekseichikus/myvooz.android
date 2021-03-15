@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_id_card_alt"
+        android:tint="#c7c8c9"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily='@font/roboto_black'
+        android:textColor="#414445"
+        android:textSize="17sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Профиль не подтвержден"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="220dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:fontFamily='@font/roboto_regular'
+        android:layout_gravity="center_horizontal"
+        android:textColor="#a1a2a3"
+        android:textSize="15sp"
+        android:text="Для просмотра заметок группы необходимо подтвердить свой профиль"/>
+</LinearLayout>
